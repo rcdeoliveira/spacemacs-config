@@ -485,7 +485,7 @@ configuration.
 Put your configuration code here, except for variables that should be set
 before packages are loaded."
     ;; avoid weird tern message
-    (setq tern-command '("node" "/home/rcdeoliveira/.nvm/versions/node/v6.11.3/bin/tern"))
+    (setq tern-command '("node" "~/.nvm/versions/node/v6.11.3/bin/tern"))
 
     ;; why use curves if you can have angles?
     ;; (setq powerline-default-separator 'arrow-fade)
