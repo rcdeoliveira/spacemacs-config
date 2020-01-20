@@ -530,8 +530,6 @@ before packages are loaded."
                                         )
     )
 
-    ;; helm's green background is annoying with tron-legacy theme
-    '(helm-selection ((t (:background "gray18" :distant-foreground "black"))))
 
   )
 
