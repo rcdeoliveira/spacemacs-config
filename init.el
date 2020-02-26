@@ -32,7 +32,8 @@ This function should only modify configuration layer settings."
 
    ;; List of configuration layers to load.
    dotspacemacs-configuration-layers
-   '(markdown
+   '(html
+     markdown
      ;; ----------------------------------------------------------------
      ;; Example of useful layers you may want to use right away.
      ;; Uncomment some layer names and press `SPC f e R' (Vim style) or
@@ -500,9 +501,6 @@ before packages are loaded."
     ;; By default, show all files in speed bar
     (setq speedbar-show-unknown-files t)
 
-    ;; use find-file-in-repository when available
-    (global-set-key (kbd "C-x f") 'find-file-in-repository)
-
     ;; add keyboard shortcut for buffer-menu
     (spacemacs/set-leader-keys "b M" 'buffer-menu)
 
@@ -523,12 +521,12 @@ before packages are loaded."
           centaur-tabs-set-bar 'under
           centaur-tabs-set-close-button nil
           centaur-tabs-show-navigation-buttons t)
-    (add-hook 'centaur-tabs-mode-hook (lambda ()
-                                        (centaur-tabs-group-by-projectile-project)
-                                        (define-key evil-normal-state-map (kbd "g>") 'centaur-tabs-forward)
-                                        (define-key evil-normal-state-map (kbd "g<") 'centaur-tabs-backward)
-                                        )
-    )
+    (add-hook 'centaur-tabs-mode-hook
+              (lambda ()
+              (centaur-tabs-group-by-projectile-project)
+              (define-key evil-normal-state-map (kbd "g>") 'centaur-tabs-forward)
+              (define-key evil-normal-state-map (kbd "g<") 'centaur-tabs-backward)
+              ))
 
 
   )
