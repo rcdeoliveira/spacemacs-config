@@ -499,9 +499,6 @@ before packages are loaded."
     (require 'auto-dictionary)
     (add-hook 'flyspell-mode-hook (lambda () (auto-dictionary-mode 1)))
 
-    ;; By default, show all files in speed bar
-    (setq speedbar-show-unknown-files t)
-
     ;; add keyboard shortcut for buffer-menu
     (spacemacs/set-leader-keys "b M" 'buffer-menu)
 
