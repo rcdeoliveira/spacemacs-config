@@ -502,12 +502,6 @@ before packages are loaded."
     ;; add keyboard shortcut for buffer-menu
     (spacemacs/set-leader-keys "b M" 'buffer-menu)
 
-    ;; Open flymd-flyit only with Firefox
-    (defun my-flymd-browser-function (url)
-      (let ((browse-url-browser-function 'browse-url-firefox))
-        (browse-url url)))
-    (setq flymd-browser-open-function 'my-flymd-browser-function)
-
     ;; Python tweaks
     (add-hook 'python-mode-hook 'anaconda-mode)
     (setq flycheck-python-pycompile-executable "python3")
