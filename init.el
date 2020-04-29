@@ -60,6 +60,7 @@ This function should only modify configuration layer settings."
      better-defaults
      yaml
      auto-completion
+     ansible
      )
 
    ;; List of additional packages that will be installed without being
