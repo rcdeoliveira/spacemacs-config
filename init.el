@@ -200,6 +200,7 @@ It should only modify the values of Spacemacs settings."
    ;; Press `SPC T n' to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
    dotspacemacs-themes '((tron-legacy :location local)
+                         material-light
                          material
                          spacemacs-dark
                          spacemacs-light)
@@ -220,7 +221,7 @@ It should only modify the values of Spacemacs settings."
 
    ;; Default font or prioritized list of fonts.
    ;;dotspacemacs-default-font '("Source Code Pro"
-   dotspacemacs-default-font '("JetBrains Mono"
+   dotspacemacs-default-font '("Fira Code"
                                :size 12.0
                                :weight normal
                                :width normal
